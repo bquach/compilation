@@ -2,8 +2,23 @@
 Pour avoir accès à notre dépot sur github :
 
 
+
+/// initialisation
+
+git config --global user.name "Your Name Here"
+git config --global user.email "your_email@youremail.com"
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+
 git clone http://github.com/classieur/compilation.git [nom de ton choix]
 
-git pull : mettre à jour tes fichiers
 
-git push : envoyer tes mises à jour
+
+/// mise à jour
+
+git pull : mettre à jour tes fichiers depuis github
+
+/// après une modification
+
+git commit -m "[commentaire]" : valider les modification (en local)
+git push : envoyer tes mises à jour à github
