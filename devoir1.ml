@@ -28,12 +28,6 @@ let rec fib n = match n with
 fib 8;;
 
 
-let rec f l =  match l with
-  | [] -> print_string "I ’ m empty "
-  | [_] -> print_string "I have one element "
-  | _ :: _ -> print_string " I have more than one element "
-;;
-
 let rec rev l = match l with
   | [] -> []
   | x::l -> (rev l)@[x]
@@ -80,7 +74,7 @@ let sum_list l = fold plus 0 l;;
 
 sum_list [1;9;3];;
 
-let set_mem a l = match l with
+let rec set_mem a l = match l with
   | [] -> false
   | b::l when b = a -> true
   | b::l -> set_mem a l
