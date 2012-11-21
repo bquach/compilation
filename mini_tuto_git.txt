@@ -1,0 +1,9 @@
+
+Pour avoir accès à notre dépot sur github :
+
+
+git clone http://github.com/classieur/compilation.git [nom de ton choix]
+
+git pull : mettre à jour tes fichiers
+
+git push : envoyer tes mises à jour
