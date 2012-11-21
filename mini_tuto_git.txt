@@ -20,5 +20,5 @@ git pull : mettre à jour tes fichiers depuis github
 
 /// après une modification
 
-git commit -m "[commentaire]" : valider les modification (en local)
+git commit -am "[commentaire]" : valider les modification (en local)
 git push : envoyer tes mises à jour à github
