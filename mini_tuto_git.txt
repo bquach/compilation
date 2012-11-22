@@ -13,7 +13,7 @@ git clone http://github.com/classieur/compilation.git [nom de ton choix]
 
 /// ajout d'un fichier
 
-git add -a
+git add [le nom du fichier à ajouter]
 
 /// mise à jour
 
