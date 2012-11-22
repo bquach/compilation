@@ -1,5 +1,5 @@
 
-Pour avoir accès à notre dépot sur github :
+Pour avoir accès à notre dépôt sur github :
 
 
 
@@ -22,3 +22,59 @@ git pull : mettre à jour tes fichiers depuis github
 
 git commit -am "[commentaire]" : valider les modification (en local)
 git push : envoyer tes mises à jour à github
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Pour créer un nouveau dépôt à partir ce quelque chose qu'on a :
+
+
+
+git init
+git add .
+ -- on ajoute le dossier entier, là. Et c'est récursif.
+git commit -m "first import"
+
+git remote add origin http://github.com/classieur/CarteEnPoche (s'il est public)
+git remote add origin https://classieur@github.com/classieur/CarteEnPoche.git (s'il est privé)
+ -- origin, c'est un nom qu'on lui donne
+
+git branch --set-upstream master origin/master (raccorde le master en local au master sur origin (= github))
+ -- origin est le nom qu'on donne au dépôt (github dans ce cas) depuis l'ordinateur
+ -- master est le le nom de la branche dans github (dans le dépôt)
+
+git push
+
+
+s'il y a déjà quelque chose il faut faire d'abord un : "git pull"
+s'il y a des conflits, on les édite, puis on fait un "commit -am "quelque chose"
+
+ensuite, juste des :
+
+git push
+
+et des
+
+git commit -am "qch"
+git pull
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+
+
+git checkout [le nom d'un fichier]
+ -- c'est pour récupérer la dernière version du fichier commited. (= svn revert)
