@@ -1,7 +1,4 @@
-
 Pour avoir accès à notre dépôt sur github :
-
-
 
 /// initialisation
 
@@ -12,7 +9,9 @@ git config --global credential.helper 'cache --timeout=3600'
 
 git clone http://github.com/classieur/compilation.git [nom de ton choix]
 
+/// ajout d'un fichier
 
+git add [le nom du fichier/dossier à ajouter (c'est récursif)]
 
 /// mise à jour
 
